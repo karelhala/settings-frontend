@@ -85,7 +85,7 @@ describe('Applications', () => {
         const wrapper = mount(
             <Provider store={ store }>
                 <Applications appsConfig={ {} } match={ { params: { id: 'testapp' }} } />
-            </Provider>,
+            </Provider>
         );
         const input = wrapper.find('input#email');
         input.getDOMNode().value = 'value';
